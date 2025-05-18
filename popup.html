@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>貨幣換算器</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 1rem;
+        min-width: 220px;
+      }
+      .rate {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #2196f3;
+        margin-top: 0.5rem;
+      }
+      label,
+      select {
+        display: block;
+        margin-top: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>匯率轉換</h3>
+    <label for="from">From</label>
+    <select id="from">
+      <option value="USD">USD</option>
+      <option value="EUR">EUR</option>
+      <option value="TWD">TWD</option>
+      <option value="JPY">JPY</option>
+      <option value="GBP">GBP</option>
+    </select>
+
+    <label for="to">To</label>
+    <select id="to">
+      <option value="TWD">TWD</option>
+      <option value="USD">USD</option>
+      <option value="EUR">EUR</option>
+      <option value="JPY">JPY</option>
+      <option value="GBP">GBP</option>
+    </select>
+
+    <div class="rate" id="rate">Loading...</div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
